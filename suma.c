@@ -62,3 +62,19 @@ int main(int argc, char const *argv[])
     
     return 0;
 }*/
+
+//Añado las librerias necesarias para trabajar mi codigo//
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Uso la función para llenar la matriz con numeros aleatorios//
+
+void matriz(int filas, int columnas, int matriz[filas][columnas]) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            matriz[i][j] = rand() % 101; 
+        }
+    }
+}
+
