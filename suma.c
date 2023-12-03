@@ -112,20 +112,20 @@ void suma(int filas, int columnas, int matrizA[filas][columnas], int matrizB[fil
         return 1; 
     }
 
- // Lleno y muestro matriz A
+    //Completo la matriz A//
     printf("\nMatriz A:\n");
     matriz(filas, columnas, matrizA);
     suma(filas, columnas, matrizA);
 
-    // Lleno y muestro matriz B
+    //Completo la matriz B//
     printf("\nMatriz B:\n");
     matriz(filas, columnas, matrizB);
     suma(filas, columnas, matrizB);
 
-    // Realizo la suma de las 2 matrices y muestro el resultado
+    //Hago la suma y muestro en pantalla el resultado//
     printf("La suma de las matrices es:\n");
     answer(filas, columnas, matrizA, matrizB, respuesta);
     suma(filas, columnas, respuesta);
 
     return 0;
-}
+}       
