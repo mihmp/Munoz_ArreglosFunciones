@@ -111,3 +111,21 @@ void suma(int filas, int columnas, int matrizA[filas][columnas], int matrizB[fil
         printf("ERROR... Los numeros deben ser mayores a 0.\n");
         return 1; 
     }
+
+ // Lleno y muestro matriz A
+    printf("\nMatriz A:\n");
+    matriz(filas, columnas, matrizA);
+    suma(filas, columnas, matrizA);
+
+    // Lleno y muestro matriz B
+    printf("\nMatriz B:\n");
+    matriz(filas, columnas, matrizB);
+    suma(filas, columnas, matrizB);
+
+    // Realizo la suma de las 2 matrices y muestro el resultado
+    printf("La suma de las matrices es:\n");
+    answer(filas, columnas, matrizA, matrizB, respuesta);
+    suma(filas, columnas, respuesta);
+
+    return 0;
+}
