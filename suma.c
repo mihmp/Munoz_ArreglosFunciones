@@ -78,3 +78,16 @@ void matriz(int filas, int columnas, int matriz[filas][columnas]) {
     }
 }
 
+// Vuelvo a usar void y hago la suma de 2 matrices
+void suma(int filas, int columnas, int matrizA[filas][columnas], int matrizB[filas][columnas], int respuesta[filas][columnas]) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            respuesta[i][j] = matrizA[i][j] + matrizB[i][j];
+        }
+    }
+}
+
+    // Declaro las matrices A, B y la de respuesta, que debí hacerlo anteriormente//
+    int matrizA[filas][columnas];
+    int matrizB[filas][columnas];
+    int respuesta[filas][columnas];
