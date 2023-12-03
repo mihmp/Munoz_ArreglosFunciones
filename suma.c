@@ -109,5 +109,5 @@ void suma(int filas, int columnas, int matrizA[filas][columnas], int matrizB[fil
     //Coloco una condicion para que cuando se ingrese un numero menor o igual a 0 se cierre el programa indicando el error//
     if (filas <= 0 || columnas <= 0) {
         printf("ERROR... Los numeros deben ser mayores a 0.\n");
-        return 1; // Se cierra por el error//
+        return 1; 
     }
